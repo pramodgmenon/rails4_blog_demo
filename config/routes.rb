@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get 'home/index'
 
   resources :articles do
-  	resources :comments, shallow: true
+  	resources :comments
 	end
 
   # The priority is based upon order of creation: first created -> highest priority.
